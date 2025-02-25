@@ -1,0 +1,22 @@
+"use client";
+// import { cn } from "@/lib/utils";
+import { ComponentProps } from "react";
+
+type Props = {
+  variant?: "primary" | "secondary";
+  size?: "default" | "small";
+} & ComponentProps<"button">;
+
+export function MenuButton({ children, type = "button", onClick }: Props) {
+  return (
+    <button
+      onClick={onClick}
+      type={type}
+      className={
+        "text-white text-clampTitles font-mono fixed top-2 right-6 z-50 mix-blend-difference"
+      }
+    >
+      {children}
+    </button>
+  );
+}

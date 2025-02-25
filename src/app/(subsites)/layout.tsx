@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { climate, grotesque, anton } from "./fonts";
-import "./globals.css";
+import Header from "@/app/(subsites)/header";
+import Footer from "@/app/(subsites)/footer";
 
 export const metadata: Metadata = {
   title: "R21 // Aquarium e.V.",
@@ -13,11 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${climate.variable} ${anton.variable} ${grotesque.variable}`}
-    >
-      <body className="bg-background w-full">{children}</body>
-    </html>
+    <div className="md:mb-8 mx-2 h-full md:w-full">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
   );
 }
