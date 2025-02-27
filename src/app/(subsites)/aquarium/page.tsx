@@ -5,7 +5,6 @@ export default function AquariumPage() {
   return (
     <div>
       <section className="min-h-full relative flex items-center gap-8">
-        {/* <div className="header__text flex-start z-50 pl-8 max-w-[50%] flex flex-col gap-2 mt-20"> */}
         <div className="header__text flex flex-col gap-2 z-50 pl-8 max-w-[50%] mt-20 h-[100vh] justify-center">
           <div className="header__title uppercase">
             {/* <div className="container__wavy">

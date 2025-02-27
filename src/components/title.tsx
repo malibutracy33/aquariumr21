@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { type Subsites, colors, image } from "@/lib/subsites";
+import { type Subsites, colors, imageUrls } from "@/lib/subsites";
 import React from "react";
 
 export default function TitleSubsites({ title, subtitle, id }: Subsites) {
@@ -24,12 +24,10 @@ export default function TitleSubsites({ title, subtitle, id }: Subsites) {
       </div>
       <div
         className={cn(
-          image[id],
           "parts-bg w-full aspect-video bg-cover bg-center bg-no-repeat z-10",
           "md:min-w-[60vw]"
-          // "md:absolute md:inset-0 md:z-[20]",
-          // "md:aspect-auto md:h-full"
         )}
+        style={{ backgroundImage: `url(${imageUrls[id]})` }}
       ></div>
     </div>
   );

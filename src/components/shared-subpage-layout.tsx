@@ -1,4 +1,11 @@
-import { getSubsiteData, type Subsites, colors, image } from "@/lib/subsites";
+"use client";
+
+import {
+  getSubsiteData,
+  type Subsites,
+  colors,
+  imageUrls,
+} from "@/lib/subsites";
 import Image from "next/image";
 
 export function SubsiteContent({ id }: Subsites) {
@@ -10,9 +17,7 @@ export function SubsiteContent({ id }: Subsites) {
       <section className="min-h-full relative flex items-center gap-8">
         <div className="header__text flex flex-col gap-2 z-50 pl-8 max-w-[50%] mt-20 h-[100vh] justify-center">
           <div className="header__title uppercase">
-            <h2
-              className={`no1 font-subsites text-4xl leading-5 ${colors[id]}`}
-            >
+            <h2 className={`font-subsites text-4xl leading-5 ${colors[id]}`}>
               {subsite.id}
             </h2>
             <h1 className="font-subsites text-5xl">{subsite.title}</h1>
@@ -24,8 +29,10 @@ export function SubsiteContent({ id }: Subsites) {
           </p>
         </div>
         <Image
-          src={image[id]}
+          src={imageUrls[id]}
           alt="background-labels"
+          width={600}
+          height={400}
           className="header__img self-end w-[60vw] h-[100vh] bg-center object-cover top-0 right-0 order-2 absolute z-10"
         />
       </section>
@@ -61,7 +68,7 @@ export function SubsiteContent({ id }: Subsites) {
       </section>
 
       <section className="text__image flex justify-center">
-        <img src={image[id]} alt="" />
+        <img className="w-[50%]" src={imageUrls[id]} alt="" />
       </section>
     </div>
   );

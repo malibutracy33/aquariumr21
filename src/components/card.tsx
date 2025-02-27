@@ -38,7 +38,7 @@
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { type Subsites, colors, image } from "@/lib/subsites";
+import { type Subsites, colors, backgroundImage } from "@/lib/subsites";
 
 export function Card({ title, subtitle, id }: Subsites) {
   return (
@@ -65,7 +65,7 @@ export function Card({ title, subtitle, id }: Subsites) {
         //   "md:transform md:translate-y-full md:group-hover:translate-y-0"
         // )}
         className={cn(
-          image[id],
+          backgroundImage[id],
           "parts-bg w-full aspect-video bg-cover bg-center bg-no-repeat",
           "md:absolute md:inset-0 md:z-[20]",
           "md:aspect-auto md:h-full",
