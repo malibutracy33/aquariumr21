@@ -6,10 +6,10 @@ export const colors = {
 };
 
 export const image = {
-  "01": "bg-[url('/placeholder.png')]",
-  "02": "bg-[url('/placeholder.png')]",
-  "03": "bg-[url('/placeholder.png')]",
-  "04": "bg-[url('/placeholder.png')]",
+  "01": "bg-[url('https://placehold.co/600x400')]",
+  "02": "bg-[url('https://placehold.co/600x400/orange/white')]",
+  "03": "bg-[url('https://placehold.co/600x400/000000/FFFFFF/png')]",
+  "04": "bg-[url('https://placehold.co/600x400/000000/FFFFFF/png')]",
 };
 
 export type Subsites = {
@@ -44,3 +44,7 @@ export const subsites: Subsites[] = [
     // image: "/placeholder.png",
   },
 ];
+
+export function getSubsiteData(id: "01" | "02" | "03" | "04") {
+  return subsites.find((sub) => sub.id === id) || null;
+}

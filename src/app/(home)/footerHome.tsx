@@ -16,7 +16,7 @@ export default function FooterSns() {
             >
               <p className="order-2">Aquarium e.V Insta</p>
               <img
-                src="/insta.svg"
+                src="images/insta.svg"
                 alt="instagram"
                 className="h-8 w-8 object-contain order-1"
               />
@@ -27,7 +27,7 @@ export default function FooterSns() {
             >
               <p className="order-2">Aquarium e.V Telegram</p>
               <img
-                src="/tele.svg"
+                src="images/tele.svg"
                 alt="telegram"
                 className="h-8 w-8 object-contain order-1"
               />
@@ -36,7 +36,7 @@ export default function FooterSns() {
             <Link className="flex gap-2 items-center" href="#">
               <p className="order-2">support us!</p>
               <img
-                src="/paypal.svg"
+                src="images/paypal.svg"
                 alt="paypal"
                 className="h-8 w-8 object-contain order-1"
               />
@@ -45,14 +45,14 @@ export default function FooterSns() {
           <div className="sns__img flex flex-col gap-2">
             <Link href="https://prepaidrecords.bandcamp.com/">
               <img
-                src="/paid.jpeg"
+                src="images/paid.jpeg"
                 alt=""
                 className="h-sns w-sns border border-black p-1"
               />
             </Link>
             <Link href="https://goldendoomrecords.bandcamp.com/">
               <img
-                src="/gdr.jpeg"
+                src="images/gdr.jpeg"
                 alt=""
                 className="h-sns w-sns border border-black p-1"
               />
