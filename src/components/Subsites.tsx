@@ -20,12 +20,6 @@ export default function Subsite({ subsite }: SubsiteProps) {
     return "short1" in content;
   };
 
-  const hasSimpleContent = (
-    content: SubsiteContent
-  ): content is { short: string; long: string } => {
-    return content && typeof content === "object" && "short" in content;
-  };
-
   return (
     <div className="relative">
       <section className="min-h-screen flex items-center gap-8">

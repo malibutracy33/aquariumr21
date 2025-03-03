@@ -43,6 +43,7 @@ export type SubsitesTry = {
   id: "01" | "02" | "03" | "04";
   title: string;
   subtitle: string;
+  pitch: string;
   imageUrl: string;
   color: string;
   content: SubsiteContent;
@@ -53,6 +54,7 @@ export const subsitesTry: SubsitesTry[] = [
     id: "01",
     title: "Aquarium",
     subtitle: "Community",
+    pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
     content: {
@@ -64,30 +66,36 @@ export const subsitesTry: SubsitesTry[] = [
     id: "02",
     title: "Framework",
     subtitle: "Shell Tapes",
+    pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/orange/white/png",
     color: "text-sub2",
     content: {
-      short: "Discover innovative frameworks that shape web development.",
-      long: "Stay updated with tutorials, resources, and community discussions.",
+      short:
+        "I'm baby esse cupidatat hot chicken, scenester +1 mustache brunch JOMO exercitation la croix banh mi 8-bit health goth big mood.",
+      long: "Im baby esse cupidatat hot chicken, scenester +1 mustache brunch JOMO exercitation la croix banh mi 8-bit health goth big mood. Quinoa commodo ascot tacos kale chips. Fugiat ennui celiac do put a bird on it everyday carry, VHS vegan vice cred dolore in. Ut ullamco keytar, gastropub adipisicing taxidermy ut etsy ad plaid truffaut mollit bitters blue bottle. Ut umami microdosing sunt air plant. Eu post-ironic VHS microdosing in mixtape bruh lomo pitchfork anim snackwave minim.90s celiac bushwick shoreditch hot chicken neutral milk hotel shabby chic mollit. Viral celiac vaporware aliquip vice paleo. Tilde nostrud scenester leggings gatekeep, semiotics kickstarter put a bird on it laboris et godard tumblr ugh hoodie. Asymmetrical DSA blue bottle locavore deserunt hashtag laborum pitchfork polaroid fixie consequat velit trust fund selvage ut. Craft beer ugh echo park, lyft excepteur listicle hell of cray art party quis sriracha godard trust fund big mood. Non culpa heirloom yr ut.",
     },
   },
   {
     id: "03",
     title: "Tape Labels",
     subtitle: "Golden Doom Rec // Prepaid rec",
+    pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/000000/FFFFFF/png",
     color: "text-sub3",
     content: {
       short1: "This is the first short description for Tape Labels.",
-      long1: "Tape Labels is a creative hub for artists and musicians.",
+      long1:
+        "Im baby esse cupidatat hot chicken, scenester +1 mustache brunch JOMO exercitation la croix banh mi 8-bit health goth big mood. Quinoa commodo ascot tacos kale chips. Fugiat ennui celiac do put a bird on it everyday carry, VHS vegan vice cred dolore in. Ut ullamco keytar, gastropub adipisicing taxidermy ut etsy ad plaid truffaut mollit bitters blue bottle. Ut umami microdosing sunt air plant. Eu post-ironic VHS microdosing in mixtape bruh lomo pitchfork anim snackwave minim.90s celiac bushwick shoreditch hot chicken neutral milk hotel shabby chic mollit. Viral celiac vaporware aliquip vice paleo. Tilde nostrud scenester leggings gatekeep, semiotics kickstarter put a bird on it laboris et godard tumblr ugh hoodie. Asymmetrical DSA blue bottle locavore deserunt hashtag laborum pitchfork polaroid fixie consequat velit trust fund selvage ut. Craft beer ugh echo park, lyft excepteur listicle hell of cray art party quis sriracha godard trust fund big mood. Non culpa heirloom yr ut.",
       short2: "Find information about upcoming releases and events.",
-      long2: "Join our community and be part of the artistic journey!",
+      long2:
+        "Im baby esse cupidatat hot chicken, scenester +1 mustache brunch JOMO exercitation la croix banh mi 8-bit health goth big mood. Quinoa commodo ascot tacos kale chips. Fugiat ennui celiac do put a bird on it everyday carry, VHS vegan vice cred dolore in. Ut ullamco keytar, gastropub adipisicing taxidermy ut etsy ad plaid truffaut mollit bitters blue bottle. Ut umami microdosing sunt air plant. Eu post-ironic VHS microdosing in mixtape bruh lomo pitchfork anim snackwave minim.90s celiac bushwick shoreditch hot chicken neutral milk hotel shabby chic mollit. Viral celiac vaporware aliquip vice paleo. Tilde nostrud scenester leggings gatekeep, semiotics kickstarter put a bird on it laboris et godard tumblr ugh hoodie. Asymmetrical DSA blue bottle locavore deserunt hashtag laborum pitchfork polaroid fixie consequat velit trust fund selvage ut. Craft beer ugh echo park, lyft excepteur listicle hell of cray art party quis sriracha godard trust fund big mood. Non culpa heirloom yr ut.",
     },
   },
   {
     id: "04",
     title: "Studio",
     subtitle: "Rent",
+    pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/FFFFFF/000000/png",
     color: "text-sub4",
     content: {
