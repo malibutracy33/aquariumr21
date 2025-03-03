@@ -1,18 +1,31 @@
-// components/Subsite.tsx
 import Image from "next/image";
-import { subsitesTry, SubsitesTry } from "@/lib/subsites"; // Adjust the import path as necessary
+import { SubsiteContent, SubsitesTry } from "@/lib/subsites";
 
-// Define the props type
 interface SubsiteProps {
-  subsite: SubsitesTry; // Expecting a single subsite object
+  subsite: SubsitesTry;
 }
 
 export default function Subsite({ subsite }: SubsiteProps) {
-  // Check if the subsite is valid
   if (!subsite) return <p>Subsite not found</p>;
-  else {
-    console.log(subsite.content);
-  }
+
+  // Type guard functions to determine which content structure we have
+  const hasDetailedContent = (
+    content: SubsiteContent
+  ): content is {
+    short1: string;
+    short2: string;
+    long1: string;
+    long2: string;
+  } => {
+    return "short1" in content;
+  };
+
+  const hasSimpleContent = (
+    content: SubsiteContent
+  ): content is { short: string; long: string } => {
+    return content && typeof content === "object" && "short" in content;
+  };
+
   return (
     <div className="relative">
       <section className="min-h-screen flex items-center gap-8">
@@ -25,15 +38,18 @@ export default function Subsite({ subsite }: SubsiteProps) {
           </div>
           <h3 className="font-subsites text-[1.4rem]">{subsite.subtitle}</h3>
 
-          {/* Render content based on the structure */}
-          {typeof subsite.content === "string" ? (
-            <p className="w-[60%]">{subsite.content}</p>
-          ) : (
+          {/* Render content based on which structure we have */}
+          {hasDetailedContent(subsite.content) ? (
             <>
               <p className="w-[60%]">{subsite.content.short1}</p>
               <p className="w-[60%]">{subsite.content.short2}</p>
               <p className="w-[60%]">{subsite.content.long1}</p>
               <p className="w-[60%]">{subsite.content.long2}</p>
+            </>
+          ) : (
+            <>
+              <p className="w-[60%]">{subsite.content.short}</p>
+              <p className="w-[60%]">{subsite.content.long}</p>
             </>
           )}
         </div>
@@ -41,7 +57,7 @@ export default function Subsite({ subsite }: SubsiteProps) {
           <Image
             src={subsite.imageUrl}
             alt="background-labels"
-            fill // Use fill for responsive images
+            fill
             className="object-cover top-0 right-0 z-10"
           />
         </div>

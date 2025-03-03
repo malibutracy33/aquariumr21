@@ -45,7 +45,7 @@ export type SubsitesTry = {
   subtitle: string;
   imageUrl: string;
   color: string;
-  content: SubsiteContent | string;
+  content: SubsiteContent;
 };
 
 export const subsitesTry: SubsitesTry[] = [
