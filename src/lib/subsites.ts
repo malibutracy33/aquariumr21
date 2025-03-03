@@ -19,43 +19,63 @@ export const imageUrls = {
   "04": "https://placehold.co/600x400/FFFFFF/000000/png",
 };
 
+// Original
 export type Subsites = {
   id: "01" | "02" | "03" | "04";
   title: string;
   subtitle: string;
 };
 
+export type SubsiteContent =
+  | {
+      short1: string;
+      short2: string;
+      long1: string;
+      long2: string;
+    }
+  | {
+      short: string;
+      long: string;
+    };
+
+// Implementing content
 export type SubsitesTry = {
   id: "01" | "02" | "03" | "04";
   title: string;
   subtitle: string;
+  imageUrl: string;
+  color: string;
+  content: SubsiteContent | string;
 };
 
-export const subsitesTry = [
+export const subsitesTry: SubsitesTry[] = [
   {
     id: "01",
     title: "Aquarium",
     subtitle: "Community",
-    imageUrl: "https://placehold.co/600x400",
+    imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
     content: {
-      short: "This is a brief description for the Aquarium subsite.",
-      long: `The Aquarium subsite is dedicated to showcasing various aquatic life. 
-              Here, you can learn about different species, their habitats, and conservation efforts. 
-              Join us in exploring the wonders of the underwater world!`,
+      short1: "This is a brief description for the Aquarium subsite.",
+      long1:
+        "The Aquarium subsite is dedicated to showcasing various aquatic life.",
+      short2: "Explore the wonders of the underwater world.",
+      long2: "Join us in learning about different species and their habitats.",
     },
   },
   {
     id: "02",
     title: "Framework",
     subtitle: "Shell Tapes",
-    imageUrl: "https://placehold.co/600x400/orange/white",
+    imageUrl: "https://placehold.co/600x400/orange/white/png",
     color: "text-sub2",
     content: {
-      short: "This is a brief description for the Framework subsite.",
-      long: `The Framework subsite focuses on the latest trends in technology and design. 
-              Discover innovative frameworks that are shaping the future of web development. 
-              Stay updated with tutorials, resources, and community discussions.`,
+      short1: "This is a brief description for the Framework subsite.",
+      long1:
+        "The Framework subsite focuses on the latest trends in technology and design.",
+      short2: "Discover innovative frameworks that shape web development.",
+      long2:
+        "Stay updated with tutorials, resources, and community discussions.",
     },
   },
   {
@@ -65,10 +85,10 @@ export const subsitesTry = [
     imageUrl: "https://placehold.co/600x400/000000/FFFFFF/png",
     color: "text-sub3",
     content: {
-      short: "This is a brief description for the Tape Labels subsite.",
-      long: `Tape Labels is a creative hub for artists and musicians. 
-              Here, you can find information about upcoming releases, events, and collaborations. 
-              Join our community and be part of the artistic journey!`,
+      short1: "This is the first short description for Tape Labels.",
+      long1: "Tape Labels is a creative hub for artists and musicians.",
+      short2: "Find information about upcoming releases and events.",
+      long2: "Join our community and be part of the artistic journey!",
     },
   },
   {
@@ -79,9 +99,7 @@ export const subsitesTry = [
     color: "text-sub4",
     content: {
       short: "This is a brief description for the Studio subsite.",
-      long: `The Studio subsite offers rental services for creative spaces. 
-              Whether you need a studio for photography, music production, or art, 
-              we have the perfect space for you. Explore our facilities and book your session today!`,
+      long: "The Studio subsite offers rental services for creative spaces.",
     },
   },
 ];
@@ -114,5 +132,5 @@ export const subsites: Subsites[] = [
 ];
 
 export function getSubsiteData(id: "01" | "02" | "03" | "04") {
-  return subsites.find((sub) => sub.id === id) || null;
+  return subsitesTry.find((sub) => sub.id === id) || null;
 }

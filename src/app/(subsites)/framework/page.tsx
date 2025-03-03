@@ -6,6 +6,8 @@ export default function Framework() {
 
   if (!framework) {
     return <div>Framework data not found</div>;
+  } else {
+    console.log(framework);
   }
 
   return (
