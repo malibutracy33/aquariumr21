@@ -56,11 +56,8 @@ export const subsitesTry: SubsitesTry[] = [
     imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
     content: {
-      short1: "This is a brief description for the Aquarium subsite.",
-      long1:
-        "The Aquarium subsite is dedicated to showcasing various aquatic life.",
-      short2: "Explore the wonders of the underwater world.",
-      long2: "Join us in learning about different species and their habitats.",
+      short: "This is a brief description for the Aquarium subsite.",
+      long: "The Aquarium subsite is dedicated to showcasing various cultural events.",
     },
   },
   {
@@ -70,12 +67,8 @@ export const subsitesTry: SubsitesTry[] = [
     imageUrl: "https://placehold.co/600x400/orange/white/png",
     color: "text-sub2",
     content: {
-      short1: "This is a brief description for the Framework subsite.",
-      long1:
-        "The Framework subsite focuses on the latest trends in technology and design.",
-      short2: "Discover innovative frameworks that shape web development.",
-      long2:
-        "Stay updated with tutorials, resources, and community discussions.",
+      short: "Discover innovative frameworks that shape web development.",
+      long: "Stay updated with tutorials, resources, and community discussions.",
     },
   },
   {
