@@ -1,6 +1,3 @@
-import Header from "@/app/(subsites)/header";
-import Footer from "@/app/(subsites)/footer";
-
 export default function SubsiteLayout({
   children,
 }: {
@@ -8,9 +5,7 @@ export default function SubsiteLayout({
 }) {
   return (
     <div className="subsite-layout md:mb-8 mx-2 h-full md:w-full">
-      <Header />
       <main>{children}</main>
-      <Footer />
     </div>
   );
 }

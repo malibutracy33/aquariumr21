@@ -1,4 +1,4 @@
-import SubsitesTry from "@/components/Subsites"; // Import the Subsite component
+import SubsitesTry from "@/components/SubsitesMain"; // Import the Subsite component
 import { subsitesTry } from "@/lib/subsites"; // Import the subsites data
 
 export default function SubsitePage({ params }: { params: { id: string } }) {
