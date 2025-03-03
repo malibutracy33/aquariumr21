@@ -21,7 +21,7 @@ export default function Subsite({ subsite }: SubsiteProps) {
   };
 
   return (
-    <div className="relative">
+    <div className="flex flex-col gap-4">
       <section className="min-h-screen flex items-center gap-8">
         <div className="header__text flex flex-col gap-2 z-50 pl-8 max-w-[50%] mt-20 h-[100vh] justify-center">
           <div className="header__title uppercase">
