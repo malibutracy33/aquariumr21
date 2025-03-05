@@ -24,6 +24,11 @@ const config = {
         clampPart3: "clamp(0.75rem, 0.2955rem + 1.9394vw, 1.75rem)",
         clampTitles: "clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem)",
       },
+      screens: {
+        "portrait-md": {
+          raw: "(orientation: portrait) and (min-width: 768px)",
+        },
+      },
       margin: {
         // doesnt work
         subTitleImgMR: "calc(clampTitles*2)",
