@@ -1,4 +1,4 @@
-import SubsitesHero from "@/components/ui/subsitehero";
+import SubsitesHero from "@/components/subsitehero";
 import { SubsiteContent, SubsitesTry } from "@/lib/subsites";
 import Image from "next/image";
 
@@ -36,6 +36,7 @@ export default function SubsiteGenerate({ subsite }: SubsiteProps) {
         {/* Render content based on which structure we have */}
         {hasDetailedContent(subsite.content) ? (
           <>
+            {/* TO DO: work on layout for tapelabels */}
             <div className="md:flex-grow">
               <p className="w-[60%]">{subsite.content.short1}</p>
               <p className="w-[60%]">{subsite.content.short2}</p>
@@ -57,12 +58,12 @@ export default function SubsiteGenerate({ subsite }: SubsiteProps) {
         )}
       </section>
       <section className="my-8 mr-subTitleImgMR flex justify-center">
-        <div className="relative w-[60vw] h-[100vh]">
+        <div className="relative w-[60vw] aspect-[3/2]">
           <Image
             src={subsite.imageUrl}
             alt="background-labels"
             fill
-            className="object-cover top-0 right-0 z-10"
+            className="object-cover"
           />
         </div>
       </section>

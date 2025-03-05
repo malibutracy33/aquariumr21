@@ -1,4 +1,5 @@
 import MailtoLink from "@/components/mailto";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 // TO DO : Enter Link for paypal (need api?)
@@ -15,10 +16,12 @@ export default function FooterSns() {
               href="https://www.instagram.com/aquarium.r21/"
             >
               <p className="order-2">Aquarium e.V Insta</p>
-              <img
+              <Image
                 src="images/insta.svg"
                 alt="instagram"
                 className="h-8 w-8 object-contain order-1"
+                width={"2"}
+                height={"2"}
               />
             </Link>
             <Link
@@ -26,35 +29,43 @@ export default function FooterSns() {
               href="https://t.me/+PWDf4rFSAEhmZThk"
             >
               <p className="order-2">Aquarium e.V Telegram</p>
-              <img
+              <Image
                 src="images/tele.svg"
                 alt="telegram"
                 className="h-8 w-8 object-contain order-1"
+                width={"2"}
+                height={"2"}
               />
             </Link>
             {/* TODO enter link */}
             <Link className="flex gap-2 items-center" href="#">
               <p className="order-2">support us!</p>
-              <img
+              <Image
                 src="images/paypal.svg"
                 alt="paypal"
                 className="h-8 w-8 object-contain order-1"
+                width={"2"}
+                height={"2"}
               />
             </Link>
           </div>
           <div className="sns__img flex flex-col gap-2">
             <Link href="https://prepaidrecords.bandcamp.com/">
-              <img
-                src="images/paid.jpeg"
+              <Image
+                src="/images/paid.jpeg"
                 alt=""
                 className="h-sns w-sns border border-black p-1"
+                width={"72"}
+                height={"72"}
               />
             </Link>
             <Link href="https://goldendoomrecords.bandcamp.com/">
-              <img
-                src="images/gdr.jpeg"
+              <Image
+                src="/images/gdr.jpeg"
                 alt=""
                 className="h-sns w-sns border border-black p-1"
+                width={"72"}
+                height={"72"}
               />
             </Link>
           </div>

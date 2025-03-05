@@ -1,4 +1,4 @@
-import SubsiteGenerate from "@/components/ui/subsitemain"; // Import the Subsite component
+import SubsiteGenerate from "@/components/subsitemain"; // Import the Subsite component
 import { subsitesTry } from "@/lib/subsites"; // Import the subsites data
 
 export default function SubsitePage({ params }: { params: { id: string } }) {

@@ -7,6 +7,7 @@ export default function SubsitesHero({
   id,
   color,
   imageUrl,
+  pitch,
 }: SubsitesTry) {
   return (
     <div>
@@ -16,7 +17,7 @@ export default function SubsitesHero({
           "md:flex-row md:h-screen portrait:flew-row"
         )}
       >
-        <div className="font-subsites md:max-w-[35vw] flex flex-col gap-2 flex-start z-20 justify-center">
+        <div className="font-subsites md:max-w-[35vw] flex flex-col gap-2 flex-start z-20 justify-center pt-7">
           <div className="uppercase leading-none">
             <h3 className={`${color} text-clampPart3`}>{id}</h3>
             <h2 className="align-center text-clampPart2 md:text-[80px] portrait:max-w-[35vw]">
@@ -24,10 +25,7 @@ export default function SubsitesHero({
             </h2>
           </div>
           <h4 className="text-clampPart3">{subtitle}</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui
-            eaque, reprehenderit tenetur consectetur molestias.
-          </p>
+          <p>{pitch}</p>
         </div>
         <div
           className={cn(
