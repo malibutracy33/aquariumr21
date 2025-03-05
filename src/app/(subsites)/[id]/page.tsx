@@ -11,8 +11,6 @@ export default function SubsitePage({ params }: { params: { id: string } }) {
     console.log("Subsite Content:", subsite.content); // Log the content
   }
 
-  // Subsite Layout Try either:
-  // return <SubsitesTry subsite={subsite} />;
   return <SubsiteGenerate subsite={subsite} />;
 }
 

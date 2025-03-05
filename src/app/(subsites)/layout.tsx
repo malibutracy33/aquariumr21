@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/app/(subsites)/header";
 import Footer from "@/app/(subsites)/footer";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "R21 // Aquarium e.V.",
