@@ -1,4 +1,4 @@
-import SubsitesTry from "@/components/SubsitesMain"; // Import the Subsite component
+import SubsiteGenerate from "@/components/ui/subsitemain"; // Import the Subsite component
 import { subsitesTry } from "@/lib/subsites"; // Import the subsites data
 
 export default function SubsitePage({ params }: { params: { id: string } }) {
@@ -11,10 +11,12 @@ export default function SubsitePage({ params }: { params: { id: string } }) {
     console.log("Subsite Content:", subsite.content); // Log the content
   }
 
-  return <SubsitesTry subsite={subsite} />;
+  // Subsite Layout Try either:
+  // return <SubsitesTry subsite={subsite} />;
+  return <SubsiteGenerate subsite={subsite} />;
 }
 
 // generate static paths for the subsites
 export async function generateStaticParams() {
-  return subsitesTry.map(({ id }) => ({ id }));
+  return subsitesTry.map(({ title }) => ({ title }));
 }

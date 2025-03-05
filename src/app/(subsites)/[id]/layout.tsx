@@ -4,7 +4,7 @@ export default function SubsiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="subsite-layout md:mb-8 mx-2 h-full md:w-full">
+    <div className="md:mb-8 mx-2 h-full md:w-full">
       <main>{children}</main>
     </div>
   );

@@ -53,7 +53,7 @@ export const subsitesTry: SubsitesTry[] = [
   {
     id: "01",
     title: "Aquarium",
-    subtitle: "Community",
+    subtitle: "(Community)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
@@ -65,7 +65,7 @@ export const subsitesTry: SubsitesTry[] = [
   {
     id: "02",
     title: "Framework",
-    subtitle: "Shell Tapes",
+    subtitle: "(Shell Tapes)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/orange/white/png",
     color: "text-sub2",
@@ -78,7 +78,7 @@ export const subsitesTry: SubsitesTry[] = [
   {
     id: "03",
     title: "Tape Labels",
-    subtitle: "Golden Doom Rec // Prepaid rec",
+    subtitle: "(Golden Doom Rec // Prepaid rec)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/000000/FFFFFF/png",
     color: "text-sub3",
@@ -94,7 +94,7 @@ export const subsitesTry: SubsitesTry[] = [
   {
     id: "04",
     title: "Studio",
-    subtitle: "Rent",
+    subtitle: "(Rent)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/FFFFFF/000000/png",
     color: "text-sub4",

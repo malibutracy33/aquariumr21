@@ -1,5 +1,5 @@
 import React from "react";
-import { colors } from "@/lib/subsites";
+// import { colors } from "@/lib/subsites";
 
 export default function AquariumPage() {
   return (
