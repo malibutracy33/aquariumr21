@@ -5,7 +5,7 @@ import React from "react";
 export default function Nav() {
   return (
     <nav>
-      <div className=" text-white font-mono text-clampTitles fixed top-2 left-6 mix-blend-difference z-50">
+      <div className=" text-white font-mono text-clampTitles fixed left-9 mix-blend-difference z-50">
         R21
       </div>
       <MenuButton>

@@ -12,7 +12,7 @@ export function MenuButton({ children, type = "button", onClick }: Props) {
       onClick={onClick}
       type={type}
       className={
-        "text-white text-clampTitles font-mono fixed top-2 right-6 z-50 mix-blend-difference"
+        "text-white text-clampTitles font-mono fixed top-8 right-6 z-50 mix-blend-difference"
       }
     >
       {children}

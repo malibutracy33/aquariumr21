@@ -9,7 +9,7 @@ export default function Home() {
       {/* margin: 0.5rem 2rem */}
       <section>
         <div className="relative h-20">
-          <h1 className="font-mono text-clampTitles absolute -left-2">R21</h1>
+          <h1 className="font-mono text-clampTitles absolute left-1">R21</h1>
         </div>
         <div className="uppercase font-subsites flex flex-col gap-4">
           {subsites.map((card) => (
