@@ -5,13 +5,11 @@ import React from "react";
 export default function Nav() {
   return (
     <nav>
-      <div className=" text-white font-mono text-clampTitles fixed left-9 mix-blend-difference z-50">
+      <div className=" text-white font-mono text-clampTitles fixed left-8 mix-blend-difference z-50">
         R21
       </div>
       <MenuButton>
-        <Link className="" href="/menu">
-          Menu
-        </Link>
+        <Link href="/menu">Menu</Link>
       </MenuButton>
     </nav>
   );

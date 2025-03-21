@@ -58,8 +58,9 @@ export const subsitesTry: SubsitesTry[] = [
     imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
     content: {
-      short: "This is a brief description for the Aquarium subsite.",
-      long: "The Aquarium subsite is dedicated to showcasing various cultural events.",
+      short:
+        "This is a brief description for the Aquarium subsite. More blablablablalblalblalblabla",
+      long: "The Aquarium subsite is dedicated to showcasing various cultural events.this is what this is is what this is. bam bam bamthis is what this is is what this is. bam bam bamthis is what this is is what this is. bam bam bam",
     },
   },
   {

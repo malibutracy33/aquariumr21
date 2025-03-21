@@ -8,7 +8,7 @@ export function Card({ title, subtitle, id }: Subsites) {
   return (
     <Link
       // TO DO: change link to title.lowercase?
-      className="parts-card py-8 group border-b border-black m-1 w-full relative flex flex-col overflow-hidden"
+      className="parts-card py-8 group border-b border-black w-full relative flex flex-col overflow-hidden"
       href={`/${title}`}
     >
       <div className="leading-none align-middle font-black flex gap-2 items-center z-10 mb-4">
