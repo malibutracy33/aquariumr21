@@ -52,7 +52,7 @@ export type SubsitesTry = {
 export const subsitesTry: SubsitesTry[] = [
   {
     id: "01",
-    title: "Aquarium",
+    title: "Aquarium ev",
     subtitle: "(Community)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/png",
