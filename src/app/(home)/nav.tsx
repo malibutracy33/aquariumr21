@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav>
       <div className=" text-white font-mono text-clampTitles fixed left-8 mix-blend-difference z-50">
-        R21
+        AQUARIUM
       </div>
       <MenuButton>
         <Link href="/menu">Menu</Link>
