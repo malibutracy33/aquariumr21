@@ -52,8 +52,8 @@ export type SubsitesTry = {
 export const subsitesTry: SubsitesTry[] = [
   {
     id: "01",
-    title: "Aquarium ev",
-    subtitle: "(Community)",
+    title: "Aquarium",
+    subtitle: "(Verein)",
     pitch: "this is what this is is what this is. bam bam bam",
     imageUrl: "https://placehold.co/600x400/png",
     color: "text-sub1",
@@ -110,7 +110,7 @@ export const subsites: Subsites[] = [
   {
     id: "01",
     title: "Aquarium",
-    subtitle: "Community",
+    subtitle: "Verein",
     // image: "/placeholder.png",
   },
   {
